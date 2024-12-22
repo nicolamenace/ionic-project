@@ -12,6 +12,7 @@ Bienvenue dans le dépôt **Projet Ionic** ! Ce projet est une application const
 ## Introduction
 
 Ce projet est une application basée sur Ionic conçue pour offrir une expérience utilisateur transparente sur plusieurs plateformes. L'application utilise plusieurs langages et frameworks pour atteindre ses fonctionnalités.
+L'application vous permet de prendre des photos et de les retrouver dynamiquement depuis l'application et de les supprimer.
 
 ## Fonctionnalités
 
