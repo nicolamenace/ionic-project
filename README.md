@@ -8,8 +8,6 @@ Bienvenue dans le dépôt **Projet Ionic** ! Ce projet est une application const
 - [Fonctionnalités](#fonctionnalités)
 - [Installation](#installation)
 - [Utilisation](#utilisation)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
 
 ## Introduction
 
