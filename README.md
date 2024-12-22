@@ -1,49 +1,49 @@
-# Ionic Project
+# Projet Ionic
 
-Welcome to the **Ionic Project** repository! This project is an application built using the Ionic framework, incorporating various technologies and languages.
+Bienvenue dans le dépôt **Projet Ionic** ! Ce projet est une application construite en utilisant le framework Ionic, incorporant diverses technologies et langages.
 
-## Table of Contents
+## Table des matières
 
 - [Introduction](#introduction)
-- [Features](#features)
+- [Fonctionnalités](#fonctionnalités)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Utilisation](#utilisation)
+- [Contribuer](#contribuer)
+- [Licence](#licence)
 
 ## Introduction
 
-This project is an Ionic-based application designed to provide a seamless user experience across multiple platforms. The application leverages several languages and frameworks to achieve its functionality.
+Ce projet est une application basée sur Ionic conçue pour offrir une expérience utilisateur transparente sur plusieurs plateformes. L'application utilise plusieurs langages et frameworks pour atteindre ses fonctionnalités.
 
-## Features
+## Fonctionnalités
 
-- Cross-platform support (iOS, Android, Web)
-- Responsive design with HTML and SCSS
-- TypeScript for robust and type-safe code
-- Integration with native functionalities using Swift (iOS) and Java (Android)
-- Interactive UI components and animations
-- Backend integration with Ruby on Rails
+- Support multiplateforme (iOS, Android, Web)
+- Design réactif avec HTML et SCSS
+- TypeScript pour un code robuste et sûr
+- Intégration avec des fonctionnalités natives en utilisant Swift (iOS) et Java (Android)
+- Composants UI interactifs et animations
+- Intégration backend avec Ruby on Rails
 
 ## Installation
 
-To get started with the project, follow these steps:
+Pour commencer avec le projet, suivez ces étapes :
 
-1. **Clone the repository**:
+1. **Cloner le dépôt** :
     ```sh
     git clone https://github.com/nicolamenace/ionic-project.git
     cd ionic-project
     ```
 
-2. **Install dependencies**:
+2. **Installer les dépendances** :
     ```sh
     npm install
     ```
 
-3. **Run the application**:
+3. **Lancer l'application** :
     ```sh
     ionic serve
     ```
 
-## Usage
+## Utilisation
 
-After successfully installing and running the application, you can access it in your web browser at `http://localhost:8100`. The application should be fully functional on both mobile devices and web browsers.
+Après avoir installé et lancé l'application avec succès, vous pouvez y accéder dans votre navigateur web à l'adresse `http://localhost:8100`. L'application devrait être entièrement fonctionnelle sur les appareils mobiles et les navigateurs web.
