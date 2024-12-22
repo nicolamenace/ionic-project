@@ -9,7 +9,7 @@ import { Preferences } from '@capacitor/preferences';
 export class PhotoService {
 
   public photos: UserPhoto[] = [];
-  private PHOTO_STORAGE: string = 'photos';
+  public PHOTO_STORAGE: string = 'photos';
 
   constructor() { }
 
@@ -47,7 +47,7 @@ export class PhotoService {
     // more to come...
   }
 
-  private async savePicture(photo: Photo) {
+  public async savePicture(photo: Photo) {
     // Convert photo to base64 format, required by Filesystem API to save
     const base64Data = await this.readAsBase64(photo);
   
@@ -83,6 +83,31 @@ export class PhotoService {
     };
     reader.readAsDataURL(blob);
   });
+
+  deletePhoto(index: number) {
+    this.photos.splice(index, 1); // Remove the photo from the array
+    Preferences.set({
+      key: this.PHOTO_STORAGE,
+      value: JSON.stringify(this.photos), // Update storage
+    });
+  }
+
+  async retakePhoto(index: number) {
+    // Capture a new photo
+    const capturedPhoto = await Camera.getPhoto({
+      resultType: CameraResultType.Uri,
+      source: CameraSource.Camera,
+      quality: 100,
+    });
+  
+    const savedImageFile = await this.savePicture(capturedPhoto);
+    // Replace the existing photo with the new one
+    this.photos[index] = savedImageFile;
+    Preferences.set({
+      key: this.PHOTO_STORAGE,
+      value: JSON.stringify(this.photos), // Update storage
+    });
+  }
     
 }
 

@@ -1,2 +1,90 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+// Define a Skibidi-inspired color palette
+$primary-color: #ff003c; // Vibrant red
+$secondary-color: #00ff84; // Neon green
+$tertiary-color: #ffd900; // Bright yellow
+$accent-color: #6b00ff; // Vivid purple
+$background-color: #72672a; // Dark background for contrast
+$text-color: #fff240; // White for visibility
+
+// Theme variables
+:root {
+  --ion-background-color: #{$background-color};
+  --ion-text-color: #{$text-color};
+  --ion-color-primary: #{$primary-color};
+  --ion-color-secondary: #{$secondary-color};
+  --ion-color-tertiary: #{$tertiary-color};
+  --ion-color-primary-contrast: #{$text-color};
+  --ion-color-secondary-contrast: #{$text-color};
+  --ion-color-tertiary-contrast: #{$text-color};
+}
+
+// Skibidi-glitchy text
+@keyframes skibidi-text-flicker {
+  0%, 100% {
+    color: #{$primary-color};
+  }
+  25% {
+    color: #{$secondary-color};
+  }
+  50% {
+    color: #{$tertiary-color};
+  }
+  75% {
+    color: #{$accent-color};
+  }
+}
+
+// Skibidi-glitchy button effect
+@keyframes skibidi-button-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px #{$primary-color};
+  }
+  25% {
+    box-shadow: 0 0 8px #{$secondary-color};
+  }
+  50% {
+    box-shadow: 0 0 8px #{$tertiary-color};
+  }
+  75% {
+    box-shadow: 0 0 8px #{$accent-color};
+  }
+}
+
+// Applying styles to UI components
+ion-content {
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+  font-family: 'Comic Sans MS', cursive, sans-serif; // Go full clown mode!
+}
+
+ion-button {
+  background: linear-gradient(
+    90deg,
+    #{$primary-color},
+    #{$secondary-color},
+    #{$tertiary-color},
+    #{$accent-color}
+  );
+  background-size: 400%;
+  color: var(--ion-text-color);
+  animation: skibidi-button-glow 2s infinite;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Impact', sans-serif;
+  text-shadow: 2px 2px 4px #{$tertiary-color};
+  animation: skibidi-text-flicker 1s infinite;
+}
+
+.card {
+  background-color: #{$secondary-color};
+  border: 4px dashed #{$accent-color};
+  border-radius: 15px;
+  box-shadow: 0 0 10px #{$primary-color};
+  padding: 20px;
+  margin: 15px;
+}
