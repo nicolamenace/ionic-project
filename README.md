@@ -48,35 +48,6 @@ To get started with the project, follow these steps:
 
 After successfully installing and running the application, you can access it in your web browser at `http://localhost:8100`. The application should be fully functional on both mobile devices and web browsers.
 
-## Contributing
-
-We welcome contributions to improve this project! Here are some ways you can contribute:
-
-- Report bugs and issues
-- Submit feature requests
-- Fork the repository, make changes, and submit a pull request
-
-To contribute, please follow these steps:
-
-1. **Fork the repository** on GitHub.
-2. **Clone your fork** locally:
-    ```sh
-    git clone https://github.com/your-username/ionic-project.git
-    cd ionic-project
-    ```
-3. **Create a new branch** for your changes:
-    ```sh
-    git checkout -b feature/my-new-feature
-    ```
-4. **Make your changes** and commit them:
-    ```sh
-    git commit -am 'Add some feature'
-    ```
-5. **Push your branch** to GitHub:
-    ```sh
-    git push origin feature/my-new-feature
-    ```
-6. **Create a new pull request** from your branch.
 
 ## License
 
