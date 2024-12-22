@@ -47,12 +47,3 @@ To get started with the project, follow these steps:
 ## Usage
 
 After successfully installing and running the application, you can access it in your web browser at `http://localhost:8100`. The application should be fully functional on both mobile devices and web browsers.
-
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this README file to better suit the specifics of your project. If you have any questions or need further assistance, please don't hesitate to reach out!
